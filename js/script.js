@@ -38,7 +38,7 @@ function generateRandomColor(mix) {
     let blue = Math.random() * 256;
 
     // mix the color
-    if (mix != null) {
+    if (mix !== null) {
         red = (red + mix.r) / 2;
         green = (green + mix.r) / 2;
         blue = (blue + mix.r) / 2;
