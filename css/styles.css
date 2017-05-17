@@ -6,7 +6,9 @@
 }
 
 .updates-container img,
+.updates-container video,
 .updates-container p {
+    vertical-align: middle;
     width: 50%;
     margin-left: -4px;
     display: inline-block;
@@ -23,6 +25,7 @@
         width: calc(100% / 2 - 13px);
     }
     .updates-container img,
+    .updates-container video,
     .updates-container p {
         width: 100%;
         display: inline-block;
