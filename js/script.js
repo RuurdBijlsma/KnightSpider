@@ -2,6 +2,14 @@ document.addEventListener('DOMContentLoaded', init, false);
 
 function init() {
     loadImages();
+    blogFrame.addEventListener('load', () => {
+        resizeIFrameToFitContent(blogFrame);
+        self.setInterval(() => resizeIFrameToFitContent(blogFrame), 1000);
+    });
+}
+
+function resizeIFrameToFitContent(iFrame) {
+    iFrame.height = iFrame.contentWindow.document.body.scrollHeight
 }
 
 async function loadImages(maxImages = Infinity) {
